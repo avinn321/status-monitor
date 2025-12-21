@@ -1,0 +1,16 @@
+
+--git
+
+git status
+git add .
+git commit -m ""
+git push origin main
+git push origin main --Push local main → remote origin/main
+
+
+
+-- server host
+
+uvicorn main:app --reload
+
+http://127.0.0.1:8000
