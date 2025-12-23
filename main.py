@@ -1,7 +1,9 @@
 from fastapi import FastAPI
 
-app = FastAPI()
+app = FastAPI(title="Log Monitor SaaS")
 
-@app.get("/")
-def root():
-    return {"I'M ALIVE !!!!!!!!!" }
+@app.get("/health")
+def health():
+    return {
+        "status": "ok"
+    }
